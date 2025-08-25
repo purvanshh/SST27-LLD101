@@ -1,5 +1,9 @@
+// Dependency Inversion Principle: Demo02 depends on abstractions (Frame)
 public class Demo02 {
     public static void main(String[] args) {
-        new Player().play(new byte[]{1,2,3,4});
+        Player player = new Player("Alice");
+        Frame frame = new NormalFrame(5, 4);
+        player.addScore(frame.getScore());
+        System.out.println(player.getName() + " scored " + player.getScore());
     }
 }
