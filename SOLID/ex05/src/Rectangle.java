@@ -1,6 +1,6 @@
 public class Rectangle {
-    protected int w,h;
-    void setWidth(int w){ this.w = w; }
-    void setHeight(int h){ this.h = h; }
-    int area(){ return w*h; }
+    private int width, height;
+    public void setWidth(int w){ this.width = w; }
+    public void setHeight(int h){ this.height = h; }
+    public int area(){ return width * height; }
 }

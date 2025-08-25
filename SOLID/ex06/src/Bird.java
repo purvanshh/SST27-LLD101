@@ -1,5 +1,9 @@
 public class Bird {
-     void fly(){
-         System.out.println("Flap!"); 
-        } 
+    public void eat() {
+        System.out.println("Peck!");
     }
+}
+
+interface Flyable {
+    void fly();
+}
